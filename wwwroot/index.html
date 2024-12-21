@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête principal -->
+        <h1>Bienvenue dans l'application</h1>
+        <p>Utilisez les liens ci-dessous pour accéder aux différentes sections :</p>
+
+        <!-- Liens vers les sections -->
+        <div class="links">
+            <a href="admin.html" class="btn">Administration</a>
+            <a href="residential.html" class="btn">Clients Résidentiels</a>
+            <a href="business.html" class="btn">Clients d'Affaires</a>
+        </div>
+
+        <!-- Formulaire de connexion -->
+        <div class="login-section">
+            <h2>Connexion</h2>
+            <form id="loginForm">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+            <p>Pas encore de compte ? <a href="register.html">Créer un compte</a></p>
+
+            <p id="error-message" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="js/login.js"></script>
+</body>
+</html>
